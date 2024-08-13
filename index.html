@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+
+        // PRINT SUM OF EVEN AND ODD NUMBERS IN ARRAY
+
+      function sumOfOddEvenNumbers(arr) {
+        let oddNum = 0;
+        let evenNum = 0;
+        for (let i = 0; i < arr.length; i++) {
+          if (arr[i] % 2 !== 0) {
+            oddNum += arr[i];
+          } else {
+            evenNum += arr[i];
+          }
+        }
+        console.log("Sum of odd numbers:", oddNum);
+        console.log("Sum of odd numbers:", evenNum);
+      }
+
+      const numbers = [1, 2, 3, 4, 5];
+      sumOfOddEvenNumbers(numbers);
+    </script>
+  </body>
+</html>
